@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(241, 169, 120);
+}
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clock {
+    height: 500px;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    background-image: url(https://www.clker.com/cliparts/c/V/F/X/v/F/clock-face-hour-and-minute-marks-no-hands-md.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.sec {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    height: 3px;
+    background-color: rgb(231, 238, 232);
+    transform-origin: left;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+}
+.min {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 5px;
+    background-color: rgb(245, 5, 5);
+    transform-origin: left;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+}
+.hour {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 28%;
+    height: 5px;
+    background-color: rgb(240, 5, 5);
+    transform-origin: left;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+}
